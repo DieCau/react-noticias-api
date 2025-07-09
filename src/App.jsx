@@ -4,6 +4,7 @@ import Formulario from "./components/Formulario";
 function App() {
   return (
     <>
+      {/* Header Main */}
       <main className="bg-secondary-subtle ">
         <h1 className="my-3 text-center fw-bold shadow py-3 bg-white">
           Noticias
