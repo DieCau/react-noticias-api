@@ -3,6 +3,7 @@ import { Form } from "react-bootstrap";
 import ScaleLoader from "react-spinners/ScaleLoader";
 import ListaNoticias from "./ListaNoticias";
 
+// Componente Formulario
 const Formulario = () => {
   const [categoria, setCategoria] = useState("");
   const [noticia, setNoticia] = useState([]);
@@ -14,6 +15,7 @@ const Formulario = () => {
     }
   }, [categoria]);
 
+  // Función para obtener noticias
   const obtenerNoticia = async () => {
     try {
       setMostrarSpinner(true);
@@ -31,9 +33,11 @@ const Formulario = () => {
     }
   };
 
+
   return (
     <div>
       <section className="p-3 border rounded-3 bg-white container">
+        {/* Formulario  */}
         <Form.Group>
           <Form.Label className="fs-4 d-flex justify-content-center">
             Seleccione Categoría
