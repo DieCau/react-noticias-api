@@ -62,6 +62,8 @@ const Formulario = () => {
           </div>
         </Form.Group>
       </section>
+      
+      {/* Seccion Noticias */}
       <section className="mt-4">
         {mostrarSpinner ? (
           <div className="my-4 d-flex justify-content-center align-items-center">
