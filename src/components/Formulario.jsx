@@ -23,7 +23,6 @@ const Formulario = () => {
 
       if (respuesta.status === 200) {
         const datos = await respuesta.json();
-        console.log(datos.results);
         setNoticia(datos.results);
         setMostrarSpinner(false);
       }
@@ -37,7 +36,7 @@ const Formulario = () => {
       <section className="p-3 border rounded-3 bg-white container">
         <Form.Group>
           <Form.Label className="fs-4 d-flex justify-content-center">
-            Seleccione categoria
+            Seleccione Categoría
           </Form.Label>
           <div className="d-flex align-items-center ">
             <Form.Select
@@ -46,7 +45,7 @@ const Formulario = () => {
               onChange={(e) => setCategoria(e.target.value)}
             >
               <option value="" disabled hidden>
-                Categorias
+                Categorías
               </option>
               <option value="business">Negocios</option>
               <option value="entertainment">Entretenimiento</option>
@@ -65,7 +64,7 @@ const Formulario = () => {
             <ScaleLoader color="#0d6efd" loading={mostrarSpinner} size={50} />
           </div>
         ) : noticia.length === 0 ? (
-          <p className="text-center fs-3">No hay noticias para mostrar.</p>
+          <p className="text-center fs-3">No hay Noticias Para Mostrar!</p>
         ) : (
           <ListaNoticias noticiaProps={noticia} />
         )}
