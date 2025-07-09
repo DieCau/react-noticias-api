@@ -13,6 +13,7 @@ function App() {
           <Formulario />
         </div>
       </main>
+      {/* Footer */}
       <footer className="bg-dark text-light text-center py-3 mt-5">
         &copy; Todos los derechos reservados - Diego Caucota
       </footer>
