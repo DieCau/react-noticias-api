@@ -1,6 +1,7 @@
 import { Card } from "react-bootstrap";
 import imagen from "../img/noImage.png";
 
+// Componente Noticia
 const Noticia = ({ noticiaProps }) => {
   return (
     <div className="h-100 my-3 p-md-2">
@@ -13,6 +14,7 @@ const Noticia = ({ noticiaProps }) => {
           />
         </div>
 
+        {/* Card de la noticia */}
         <Card.Body className="flex-grow-1 d-flex flex-column">
           <Card.Title className="fs-3 pb-3">{noticiaProps.title}</Card.Title>
           <Card.Text className="text-start fs-5">
@@ -21,6 +23,8 @@ const Noticia = ({ noticiaProps }) => {
               : "Sin descripción disponible."}
           </Card.Text>
         </Card.Body>
+
+        {/* Card del footer */}
         <div className="card-footer p-2 rounded-2">
           <a
             href={noticiaProps.link}
