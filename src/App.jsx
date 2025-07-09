@@ -13,7 +13,7 @@ function App() {
         </div>
       </main>
       <footer className="bg-dark text-light text-center py-3 mt-5">
-        &copy; Todos los derechos reservados
+        &copy; Todos los derechos reservados - Diego Caucota
       </footer>
     </>
   );
